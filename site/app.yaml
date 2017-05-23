@@ -10,7 +10,7 @@ handlers:
     upload: index.html
     expiration: 1y
     http_headers:
-      Link: Link: <assets/img/logo-alura.svg>; rel=preload; as=image, <assets/img/background-cidade-fundo.svg>; rel=preload; as=image
+      Link: Link: <assets/css/critico.css>; rel=preload; as=style <assets/img/logo-alura.svg>; rel=preload; as=image, <assets/img/background-cidade-fundo.svg>; rel=preload; as=image
 
   - url: /assets
     static_dir: assets
