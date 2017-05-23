@@ -8,6 +8,9 @@ handlers:
   - url: /
     static_files: index.html
     upload: index.html
+    expiration: 1y
+    http_headers:
+      Link: <assets/img/background-cidade-fundo.svg>; rel=preload; as=image
 
   - url: /assets
     static_dir: assets
