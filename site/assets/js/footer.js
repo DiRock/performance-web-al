@@ -1,6 +1,14 @@
 setTimeout(function() {
 	var newsletterForm = document.querySelector('.footer-newsletter-form');
+	var inputEmail = document.querySelector('.footer-newsletter-input');
 	newsletterForm.onsubmit = valida;
+
+	inputEmail.onfocus = function(){
+		var prerender = document.createElement('link');
+		prerender.rel = 'prerender';
+		prerender.href = 'cadastrado.html';
+		document.head.appendChild(prerender);
+	}
 
 	function valida() {
 		var isValid = true;
